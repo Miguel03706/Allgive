@@ -53,11 +53,19 @@ body {
     padding: 8%;
 }
 
+.form-ong {
+    padding: 8%;
+    display: none;
+}
+
 @media only screen and (max-width: 450px) {
     .main {
         margin: 5% 0;
     }
     .form-donate {
+        padding-top: 20vh;
+    }
+    .form-ong {
         padding-top: 20vh;
     }
     .topo aside:first-child {
