@@ -26,10 +26,12 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
+    transition: ease 0.8s;
 }
-.topo:hover {
+.topo aside:first-child:hover {
     cursor: pointer;
-    opacity: 0.8;
+    background-color: #d84fba;
+
 }
 .topo aside:last-child {
     background-color: #dc81c8;
@@ -39,6 +41,12 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
+    transition: ease 0.8s;
+
+}
+.topo aside:last-child:hover {
+    cursor: pointer;
+    background-color: #d84fba;
 }
 
 .form-donate {
