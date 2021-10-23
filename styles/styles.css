@@ -1,0 +1,118 @@
+header {
+    position: relative !important;
+}
+header .img_header {
+    height: 100vh;
+    width: 100%;
+}
+
+header .text_header {
+    color: #000;
+    max-width: 250px;
+    right: 10%;
+    top: 20vh;
+    text-align: center;
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+header .buttons_header {
+    color: #000;
+    min-width: 250px;
+    right: 10%;
+    top: 40vh;
+    text-align: center;
+    position: absolute;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+header .buttons_header button{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+.btn_cadastro{
+    background-color: #E94AFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 0.5s
+}
+.btn_cadastro:hover{
+ opacity: 0.7;
+}
+
+.btn_login{
+    background-color: #C43ED6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 0.5s
+}
+
+.btn_login:hover{
+    opacity: 0.8;
+   }
+
+.main {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.img_equipe{
+    width: 50%;
+    height:auto;
+}
+.img_saude{
+    width: 50%;
+    height:auto;
+}
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 15vh;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #001219;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 450px) {
+    header .text_header {
+        max-width: 400px;
+        justify-self: center;
+        left: 0;
+        right: 0;
+        margin: 0% 20%;
+        text-align: center;
+    }
+    header .buttons_header {
+        left: 0;
+        right: 0;
+        margin: 10% 10%;
+        text-align: center;
+        position: absolute;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .img_equipe{
+        width: 100%;
+        height:auto;
+    }
+    .img_saude{
+        width: 100%;
+        height:auto;
+    }
+}
