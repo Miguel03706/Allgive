@@ -18,5 +18,4 @@ function ocultar() {
     ong.style.backgroundColor = "#c52ea3";
     document.getElementById("form_donate").style.display = "none";
     document.getElementById("form_ong").style.display = "block";
-
 }
