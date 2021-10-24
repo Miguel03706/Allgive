@@ -31,7 +31,6 @@ body {
 .topo aside:first-child:hover {
     cursor: pointer;
     background-color: #d84fba;
-
 }
 .topo aside:last-child {
     background-color: #dc81c8;
@@ -42,7 +41,6 @@ body {
     justify-content: center;
     align-items: center;
     transition: ease 0.8s;
-
 }
 .topo aside:last-child:hover {
     cursor: pointer;
@@ -56,6 +54,31 @@ body {
 .form-ong {
     padding: 8%;
     display: none;
+}
+
+.btnUser,
+.btnOng {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    background-color: #e94aff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+.btnUser:hover,
+.btnOng:hover {
+    opacity: 0.7;
+}
+
+.btnUser:disabled,
+.btnOng:disabled {
+    opacity: 0.7;
+    background-color: #d181db;
+
 }
 
 @media only screen and (max-width: 450px) {

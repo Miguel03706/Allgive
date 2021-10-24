@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-
     <title>Cadastrar</title>
-
 </head>
 
 <body>
@@ -32,14 +29,14 @@
             <form action="" method="post">
                 <p>
                     <label for="email">Email: </label>
-                    <input type="text" name="emailUser" placeholder="Digite seu Email" class="form-control emailUser" required>
+                    <input type="email" name="emailUser" placeholder="Digite seu Email" class="form-control emailUser" required>
                 </p>
                 <p>
                     <label for="password">Senha: </label>
                     <input type="password" name="password" class="form-control" placeholder="Digite sua senha" required>
                 </p>
                 <p class="col-md-12 text-center">
-                    <input type="submit" value="Enviar" name="submit" class="btn-group-sm">
+                    <input type="submit" value="Enviar" name="submit" class="btn-group-sm btnUser">
                 </p>
             </form>
         </div>
@@ -48,7 +45,7 @@
             <form action="" method="post">
                 <p>
                     <label for="email">Email: </label>
-                    <input type="text" name="emailOng" placeholder="Digite seu Email" class="form-control emailOng" required>
+                    <input type="email" name="emailOng" placeholder="Digite seu Email" class="form-control emailOng" required>
                 </p>
                 <p>
                     <label for="password">Senha: </label>
@@ -91,7 +88,7 @@
                     <input type="text" name="cnpj" class="form-control cpf" placeholder="Digite seu CPF" required>
                 </p>
                 <p class="col-md-12 text-center">
-                    <input type="submit" value="Enviar" name="submit" class="btn-group-sm">
+                    <input type="submit" value="Enviar" name="submit" class="btn-group-sm btnOng">
                 </p>
             </form>
         </div>
@@ -110,33 +107,33 @@
                 let reg = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
                 let $email = $("input[name='emailUser']");
 
-            if (reg.test($email.val())) {
-                $(".emailUser").removeClass("is-invalid")
-                $(".emailUser").addClass("is-valid")
-                $("input[type='submit']").attr("disabled", false);
+                if (reg.test($email.val())) {
+                    $(".emailUser").removeClass("is-invalid")
+                    $(".emailUser").addClass("is-valid")
+                    $(".btnUser").attr("disabled", false);
 
 
-            } else {
-                $(".emailUser").addClass("is-invalid")
-                $("input[type='submit']").attr("disabled", true);
-            }
+                } else {
+                    $(".emailUser").addClass("is-invalid")
+                    $(".btnUser").attr("disabled", true);
+                }
             });
 
             $("input[name='emailOng']").blur(function() {
                 let reg = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
                 let $email = $("input[name='emailOng']");
 
-            if (reg.test($email.val())) {
-                $(".emailOng").removeClass("is-invalid")
-                $(".emailOng").addClass("is-valid")
-                $("input[type='submit']").attr("disabled", false);
-            } else {
-                $(".emailOng").addClass("is-invalid")
-                $("input[type='submit']").attr("disabled", true);
+                if (reg.test($email.val())) {
+                    $(".emailOng").removeClass("is-invalid")
+                    $(".emailOng").addClass("is-valid")
+                    $(".btnOng").attr("disabled", false);
+                } else {
+                    $(".emailOng").addClass("is-invalid")
+                    $(".btnOng").attr("disabled", true);
 
-            }
+                }
             });
-            
+
             $("input[name='cep']").blur(function() {
                 let $cep = $("input[name='cep']").val();
                 let $cidade = $("input[name='cidade']");
@@ -156,13 +153,8 @@
 </html>
 
 <?php
-//https://docs.awesomeapi.com.br/api-cep
 if (isset($_POST["submit"])) {
     $email = $_POST["email"];
     $id = sha1(uniqid(rand(), true));
     $senha = sha1($_POST["password"]);
-
-
-
-    // echo "<div class='col-md-6'>email: $email | senha: $senha| id: $id')</div>";
 };
