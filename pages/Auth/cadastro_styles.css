@@ -2,13 +2,14 @@ html,
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .main {
     background-color: #f3d5ed;
-    max-width: 1280px;
+    max-width: 1200px;
     height: 100%;
-    margin: 5% auto;
+    margin: 5vh auto;
 }
 .header {
     background-color: #c52ea3;
@@ -56,6 +57,10 @@ body {
     display: none;
 }
 
+.estado, .cidade{
+    pointer-events: none;
+}
+
 .btnUser,
 .btnOng {
     width: 200px;
@@ -83,7 +88,7 @@ body {
 
 @media only screen and (max-width: 450px) {
     .main {
-        margin: 5% 0;
+        margin: 5vh 0;
     }
     .form-donate {
         padding-top: 20vh;

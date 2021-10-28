@@ -10,13 +10,13 @@
 </head>
 
 <body>
+
     <!-- BOOTSTRAPS PRO SITE FICAR RESPONSIVO-->
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-    <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
     <!-- ---------------------------------- -->
     <link rel="stylesheet" href="cadastro_styles.css">
     <script src="cadastro.js"></script>
-
+    <!-- ---------------------------------- -->
     <div class="main">
         <div class="container-fluid header">
             <div class="row align-items-center topo">
@@ -27,16 +27,16 @@
 
         <div class="form-donate" id="form_donate">
             <form action="" method="post">
-                <p>
+                <p class="col-md-12">
                     <label for="email">Email: </label>
                     <input type="email" name="emailUser" placeholder="Digite seu Email" class="form-control emailUser" required>
                 </p>
-                <p>
+                <p class="col-md-12">
                     <label for="password">Senha: </label>
                     <input type="password" name="password" class="form-control" placeholder="Digite sua senha" required>
                 </p>
                 <p class="col-md-12 text-center">
-                    <input type="submit" value="Enviar" name="submit" class="btn-group-sm btnUser">
+                    <input type="submit" value="Enviar" name="submitUser" class="btn-group-sm btnUser">
                 </p>
             </form>
         </div>
@@ -69,11 +69,11 @@
                         </aside>
                         <aside class="col-md-4">
                             <label for="estado">Estado: </label>
-                            <input type="select" name="estado" class="form-control" disabled required>
+                            <input type="text" name="estado" class="form-control estado" required>
                         </aside>
                         <aside class="col-md-4">
                             <label for="cidade">Cidade: </label>
-                            <input type="select" name="cidade" class="form-control" disabled required>
+                            <input type="text" name="cidade" class="form-control cidade" required>
                         </aside>
 
                     </div>
@@ -85,10 +85,10 @@
                 </p>
                 <p>
                     <label for="cpf">CPF: </label>
-                    <input type="text" name="cnpj" class="form-control cpf" placeholder="Digite seu CPF" required>
+                    <input type="text" name="cpf" class="form-control cpf" placeholder="Digite seu CPF" required>
                 </p>
                 <p class="col-md-12 text-center">
-                    <input type="submit" value="Enviar" name="submit" class="btn-group-sm btnOng">
+                    <input type="submit" value="Enviar" name="submitOng" class="btn-group-sm btnOng">
                 </p>
             </form>
         </div>
@@ -153,8 +153,11 @@
 </html>
 
 <?php
-if (isset($_POST["submit"])) {
-    $email = $_POST["email"];
-    $id = sha1(uniqid(rand(), true));
-    $senha = sha1($_POST["password"]);
+   require_once '../../data/connection.php';
+
+if (isset($_POST["submitUser"])) {
+    require_once '../../data/cadastrarUser.php';
+};
+if (isset($_POST["submitOng"])) {
+    require_once '../../data/cadastrarOng.php';
 };
