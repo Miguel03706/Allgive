@@ -24,12 +24,41 @@ if (isset($_SESSION["id_usuario"])) {
     <!-- BOOTSTRAPS PRO SITE FICAR RESPONSIVO-->
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <!-- ---------------------------------- -->
-    <link rel="stylesheet" href="cadastro_styles.css">
-    <script src="cadastro.js"></script>
+    <link rel="stylesheet" href="inicio_styles.css">
     <!-- ---------------------------------- -->
     <header>
-        
+        <ul>
+            <li><a href="#"><image src="../../public/icons/home.png"> Inicio</a></li>
+            <li><a href="#"><image src="../../public/icons/group.png"> Organizações</a></li>
+            <li><a href="#"><image src="../../public/icons/favorit.png"> Favoritos</a></li>
+            <li><a href="#"><image src="../../public/icons/bell.png"> Notificações</a></li>
+            <li><a href="#"><image src="../../public/icons/perfil.png"> Perfil</a></li>
+
+        </ul>
     </header>
+
+
+    <!-- BARRA DE PESQUISA -->
+
+
+
+    <!-- CARROSSEIS -->
+
+
+    <footer class="footer">
+        <div class="container-fluid ">
+            <div class="row align-items-center">
+                <aside class="col-md-4 text-center py-2">Trabalho realizado na Etec de Itaquaquecetuba</aside>
+                <aside class="col-md-4 text-center py-2">
+                    &copy; Matheus | Miguel | Niely | Ryan
+                </aside>
+                <aside class="col-md-4 text-center py-2">
+                    3º ETIM DS
+                </aside>
+            </div>
+        </div>
+    </footer>
+
 
 </body>
 
