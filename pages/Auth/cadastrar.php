@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="cadastro_styles.css">
     <script src="cadastro.js"></script>
     <!-- ---------------------------------- -->
+        <a class="btn_return" href="http://localhost/Giveall/">Voltar</a>
     <div class="main">
         <div class="container-fluid header">
             <div class="row align-items-center topo">
@@ -153,7 +154,7 @@
 </html>
 
 <?php
-   require_once '../../data/connection.php';
+require_once '../../data/connection.php';
 
 if (isset($_POST["submitUser"])) {
     require_once '../../data/cadastrarUser.php';

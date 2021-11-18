@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
 header {
     position: relative !important;
 }
@@ -115,4 +119,5 @@ header .buttons_header button{
         width: 100%;
         height:auto;
     }
+    
 }
