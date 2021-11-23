@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-*{
-    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
 }
 header {
     position: relative !important;
@@ -34,50 +39,91 @@ header .buttons_header {
     font-size: large;
 }
 
-header .buttons_header button{
+header .buttons_header button {
     width: 200px;
     height: 50px;
     text-align: center;
     font-weight: bold;
     font-size: large;
 }
-.btn_cadastro{
-    background-color: #E94AFF;
+.btn_cadastro {
+    background-color: #e94aff;
     color: #fff;
     border: none;
     border-radius: 10px;
-    transition-duration: 0.5s
+    transition-duration: 0.5s;
 }
-.btn_cadastro:hover{
- opacity: 0.7;
+.btn_cadastro:hover {
+    opacity: 0.7;
 }
 
-.btn_login{
-    background-color: #C43ED6;
+.btn_login {
+    background-color: #c43ed6;
     color: #fff;
     border: none;
     border-radius: 10px;
-    transition-duration: 0.5s
+    transition-duration: 0.5s;
 }
 
-.btn_login:hover{
+.btn_login:hover {
     opacity: 0.8;
-   }
+}
 
 .main {
     padding: 10px;
     margin-bottom: 10px;
 }
 
-.img_equipe{
+.img_equipe {
     width: 50%;
-    height:auto;
+    height: auto;
 }
-.img_saude{
+.img_saude {
     width: 50%;
-    height:auto;
+    height: auto;
 }
 
+/* 
+
+*/
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #e94aff;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px 50px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    width: inherit;
+    height: 10vh;
+}
+header ul li {
+    width: inherit;
+    margin: 0px 15px;
+}
+
+header ul li a {
+    width: inherit;
+    color: black;
+    cursor: pointer;
+    opacity: 0.8;
+}
+header ul li a img {
+    margin-right: 10px;
+}
+header ul li a:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 1;
+}
 
 .footer {
     display: flex;
@@ -111,13 +157,21 @@ header .buttons_header button{
         font-size: large;
     }
 
-    .img_equipe{
+    .img_equipe {
         width: 100%;
-        height:auto;
+        height: auto;
     }
-    .img_saude{
+    .img_saude {
         width: 100%;
-        height:auto;
+        height: auto;
     }
-    
 }
+    
+@media only screen and (max-width: 730px) {
+    header {
+        flex-direction: column;
+        width: 100%;
+        height: 15vh;
+    }
+}
+

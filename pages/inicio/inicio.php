@@ -25,15 +25,35 @@ if (isset($_SESSION["id_usuario"])) {
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <!-- ---------------------------------- -->
     <link rel="stylesheet" href="inicio_styles.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
     <!-- ---------------------------------- -->
     <header>
         <ul>
-            <li><a href="#"><image src="../../public/icons/home.png"> Inicio</a></li>
-            <li><a href="#"><image src="../../public/icons/group.png"> Organizações</a></li>
-            <li><a href="#"><image src="../../public/icons/favorit.png"> Favoritos</a></li>
-            <li><a href="#"><image src="../../public/icons/bell.png"> Notificações</a></li>
-            <li><a href="#"><image src="../../public/icons/perfil.png"> Perfil</a></li>
-
+            <li>
+                <a href="/Giveall/pages/inicio/inicio.php">
+                    <image src="../../public/icons/home.png"> Inicio
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <image src="../../public/icons/group.png"> Organizações
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <image src="../../public/icons/favorit.png"> Favoritos
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <image src="../../public/icons/bell.png"> Notificações
+                </a>
+            </li>
+            <li>
+                <a href="/Giveall/pages/perfil/perfil.php">
+                    <image src="../../public/icons/perfil.png"> Perfil
+                </a>
+            </li>
         </ul>
     </header>
 
@@ -44,6 +64,13 @@ if (isset($_SESSION["id_usuario"])) {
 
     <!-- CARROSSEIS -->
 
+    <div>
+
+    <!-- <?php
+        $query = "SELECT * FROM "
+    ?> -->
+
+    </div>
 
     <footer class="footer">
         <div class="container-fluid ">
