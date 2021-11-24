@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -29,17 +29,17 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/Giveall/pages/organizacoes/organizacoes.php">
                     <image src="../../public/icons/group.png"> Organizações
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/Giveall/pages/favoritos/favoritos.php">
                     <image src="../../public/icons/favorit.png"> Favoritos
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/Giveall/pages/notificacoes/notificacoes.php">
                     <image src="../../public/icons/bell.png"> Notificações
                 </a>
             </li>

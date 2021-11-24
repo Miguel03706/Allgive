@@ -1,30 +1,16 @@
-<?php
-session_start();
-require_once "../../data/connection.php";
-
-if (isset($_SESSION["id_usuario"])) {
-    $id = $_SESSION["id_usuario"];
-} else {
-    header("location: http://localhost/Giveall/");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allgive</title>
+    <title>Notificações</title>
 </head>
-
 <body>
-
-    <!-- BOOTSTRAPS PRO SITE FICAR RESPONSIVO-->
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+     <!-- BOOTSTRAPS PRO SITE FICAR RESPONSIVO-->
+     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <!-- ---------------------------------- -->
-    <link rel="stylesheet" href="inicio_styles.css">
+    <link rel="stylesheet" href="notificacoes_styles.css">
     <link rel="stylesheet" href="../../styles/styles.css">
     <!-- ---------------------------------- -->
     <header>
@@ -57,19 +43,10 @@ if (isset($_SESSION["id_usuario"])) {
             </li>
         </ul>
     </header>
-
-
-    <!-- BARRA DE PESQUISA -->
-
-
-
-    <!-- CARROSSEIS -->
-
-    <div class="groups">
-        <div class="row">
-            aaaaaaa
-        </div>
+    <div>
+        aaaaaaa
     </div>
+
 
     <footer class="footer">
         <div class="container-fluid ">
@@ -84,14 +61,5 @@ if (isset($_SESSION["id_usuario"])) {
             </div>
         </div>
     </footer>
-
-
 </body>
-
 </html>
-
-<?php
-// if (isset($_POST["deslogar"])) {
-//     session_destroy();
-// }
-?>
