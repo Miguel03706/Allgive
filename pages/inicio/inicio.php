@@ -61,13 +61,21 @@ if (isset($_SESSION["id_usuario"])) {
 
     <!-- BARRA DE PESQUISA -->
 
+    <div class="search tex">
+        <input type="text" class="form-control text-center" placeholder="pesquise uma organização">
+    </div>
 
 
     <!-- CARROSSEIS -->
 
     <div class="groups">
         <div class="row">
-            aaaaaaa
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap" >
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
         </div>
     </div>
 
