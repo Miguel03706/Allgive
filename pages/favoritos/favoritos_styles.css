@@ -1,0 +1,23 @@
+.favorites{
+    max-width: 980px;
+    margin: 20px auto;
+    background-color: rgba(219, 208, 208, 0.37);
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.btn_fav {
+    width: auto;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    background-color: #e94aff;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+.btn_fav:hover {
+    opacity: 0.9;
+}

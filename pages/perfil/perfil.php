@@ -63,15 +63,15 @@ session_start();
                 <aside class="col-md-8 py-2">
                     <form action="" class="form-donate">
                         <label for="name" class="text-left">Nome: </label>
-                        <input type="text" class="form-control" name="name" disabled>
+                        <input type="text" class="form-control" name="name" placeholder="exemplo de nome" disabled>
                         <label for="cpf" class="text-left mt-4">CPF: </label>
-                        <input type="text" class="form-control" name="cpf" disabled>
+                        <input type="text" class="form-control" name="cpf" placeholder="000.000.000-00" disabled>
                         <label for="numero" class="text-left mt-4">Número: </label>
-                        <input type="text" class="form-control" name="numero" disabled>
+                        <input type="text" class="form-control" name="numero" placeholder="(xx) xxxxx-xxxx" disabled>
                         <label for="email" class="text-left mt-4">Email: </label>
-                        <input type="text" class="form-control" name="email" disabled>
+                        <input type="text" class="form-control" name="email" placeholder="exemple@exemple.com" disabled>
                         <label for="cep" class="text-left mt-4">Cep: </label>
-                        <input type="text" class="form-control" name="cep" disabled>
+                        <input type="text" class="form-control" name="cep" placeholder="00000-000" disabled>
                     </form>
                 </aside>
             </div>
@@ -104,7 +104,7 @@ session_start();
 
             $.getJSON(`http://localhost/Giveall/api/getDados.php?id=${$id}`, function(json) {
                 $nome.val(json.result[0].nome)
-                console.log(json.result[0])
+                //console.log(json.result[0])
             }).then().catch(error => {
                 alert("ERRO: volte a página inicial");
             });

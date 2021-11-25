@@ -1,0 +1,7 @@
+.notifications{
+    max-width: 980px;
+    margin: 20px auto;
+    background-color: rgba(219, 208, 208, 0.37);
+    border: 1px solid black;
+    border-radius: 8px;
+}
