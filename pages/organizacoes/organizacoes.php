@@ -12,7 +12,7 @@
     <!-- BOOTSTRAPS PRO SITE FICAR RESPONSIVO-->
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <!-- ---------------------------------- -->
-    <link rel="stylesheet" href="notificacoes_styles.css">
+    <link rel="stylesheet" href="organizacoes_styles.css">
     <link rel="stylesheet" href="../../styles/styles.css">
     <!-- ---------------------------------- -->
     <header>
@@ -45,8 +45,53 @@
             </li>
         </ul>
     </header>
-    <div>
-        aaaaaaa
+
+    <div class="main">
+        <div class="org">
+            <div class="container-fluid py-3">
+                <div class="row align-items-center">
+                    <aside class="col-md-4 text-center py-2">
+                        <img src="../../public/images/img_saude.jpg" height="100px" alt="img_de_usuario" class="img_user" />
+                    </aside>
+                    <aside class="col-md-4 text-center py-2">
+                        Texto com breve explicação sobre a ong em questão
+                    </aside>
+                    <aside class="col-md-4 text-center py-2">
+                        <button class="btn_org">Acessar página</button>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="org">
+            <div class="container-fluid py-3">
+                <div class="row align-items-center">
+                    <aside class="col-md-4 text-center py-2">
+                        <img src="../../public/images/img_saude.jpg" height="100px" alt="img_de_usuario" class="img_user" />
+                    </aside>
+                    <aside class="col-md-4 text-center py-2">
+                        Texto com breve explicação sobre a ong em questão
+                    </aside>
+                    <aside class="col-md-4 text-center py-2">
+                        <button class="btn_org">Acessar página</button>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="org">
+            <div class="container-fluid py-3">
+                <div class="row align-items-center">
+                    <aside class="col-md-4 text-center py-2">
+                        <img src="../../public/images/img_saude.jpg" height="100px" alt="img_de_usuario" class="img_user" />
+                    </aside>
+                    <aside class="col-md-4 text-center py-2">
+                        Texto com breve explicação sobre a ong em questão
+                    </aside>
+                    <aside class="col-md-4 text-center py-2">
+                        <button class="btn_org">Acessar página</button>
+                    </aside>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">

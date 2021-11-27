@@ -92,7 +92,7 @@ session_start();
         </div>
     </footer>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
     <script>
         $(document).ready(function() {
             let $id = "37a5de8611f32d48cb51d0b9d7beb7f1146621c5";
@@ -109,7 +109,7 @@ session_start();
                 alert("ERRO: volte a página inicial");
             });
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

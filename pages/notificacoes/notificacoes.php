@@ -48,7 +48,7 @@
 
     <div class="main">
         <div class="notifications">
-            <div class="container-fluid">
+            <div class="container-fluid py-3">
                 <div class="row align-items-center">
                     <aside class="col-md-2 text-center py-2">
                     <image src="../../public/icons/bell.png">
@@ -60,7 +60,19 @@
             </div>
         </div>
         <div class="notifications">
-            <div class="container-fluid">
+            <div class="container-fluid py-3">
+                <div class="row align-items-center">
+                    <aside class="col-md-2 text-center py-2">
+                    <image src="../../public/icons/bell.png">
+                    </aside>
+                    <aside class="col-md-10 text-center py-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur deleniti alias nemo repellat explicabo ea ipsa, quam voluptatem sit quia magni, autem similique fuga fugit maiores dolore eos adipisci.
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="notifications">
+            <div class="container-fluid py-3">
                 <div class="row align-items-center">
                     <aside class="col-md-2 text-center py-2">
                     <image src="../../public/icons/bell.png">

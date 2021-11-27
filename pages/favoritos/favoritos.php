@@ -48,7 +48,7 @@
 
     <div class="main">
         <div class="favorites">
-            <div class="container-fluid">
+            <div class="container-fluid py-3">
                 <div class="row align-items-center">
                     <aside class="col-md-2 text-center py-2">
                         <image src="../../public/icons/favorit.png">
@@ -63,7 +63,22 @@
             </div>
         </div>
         <div class="favorites">
-            <div class="container-fluid">
+            <div class="container-fluid py-3">
+                <div class="row align-items-center">
+                    <aside class="col-md-2 text-center py-2">
+                        <image src="../../public/icons/favorit.png">
+                    </aside>
+                    <aside class="col-md-8 text-center py-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur deleniti alias nemo repellat explicabo ea ipsa, quam voluptatem sit quia magni, autem similique fuga fugit maiores dolore eos adipisci.
+                    </aside>
+                    <aside class="col-md-2 text-center py-2">
+                        <button class="btn_fav">Desfavoritar</button>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="favorites">
+            <div class="container-fluid py-3">
                 <div class="row align-items-center">
                     <aside class="col-md-2 text-center py-2">
                         <image src="../../public/icons/favorit.png">
