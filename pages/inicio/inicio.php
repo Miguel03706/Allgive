@@ -69,12 +69,56 @@ if (isset($_SESSION["id_usuario"])) {
     <!-- CARROSSEIS -->
 
     <div class="groups">
-        <div class="row">
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap" >
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+        <div class="container-fluid ">
+            <div class="label_ongs">Ongs de educação</div>
+            <div class="row align-items-center">
+                <aside class="col-md-2 text-center py-2">
+                    <img src="../../public/icons/backLeft.png" alt="icone_retorno">
+                </aside>
+                <aside class="col-md-2 text-center py-2">
+                    <div class="org_left">
+                        Foto
+                    </div>
+                </aside>
+                <aside class="col-md-4 text-center py-2">
+                    <div class="org_center">
+                        Foto
+                    </div>
+                </aside>
+                <aside class="col-md-2 text-center py-2">
+                    <div class="org_right">
+                        Foto
+                    </div>
+                </aside>
+                <aside class="col-md-2 text-center py-2">
+                    <img src="../../public/icons/backRight.png" alt="icone_retorno">
+                </aside>
+            </div>
+        </div>
+        <div class="container-fluid ">
+            <div class="label_ongs">Ongs de saude</div>
+            <div class="row align-items-center">
+                <aside class="col-md-2 text-center py-2">
+                    <img src="../../public/icons/backLeft.png" alt="icone_retorno">
+                </aside>
+                <aside class="col-md-2 text-center py-2">
+                    <div class="org_left">
+                        Foto
+                    </div>
+                </aside>
+                <aside class="col-md-4 text-center py-2">
+                    <div class="org_center">
+                        Foto
+                    </div>
+                </aside>
+                <aside class="col-md-2 text-center py-2">
+                    <div class="org_right">
+                        Foto
+                    </div>
+                </aside>
+                <aside class="col-md-2 text-center py-2">
+                    <img src="../../public/icons/backRight.png" alt="icone_retorno">
+                </aside>
             </div>
         </div>
     </div>

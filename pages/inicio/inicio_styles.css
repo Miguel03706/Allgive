@@ -7,3 +7,18 @@
     max-width: 1200px;
     margin: 20px auto;
 }
+
+.org_left, .org_center, .org_right{
+    height:25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(197, 195, 195);
+}
+.org_center{
+    height:30vh !important;
+}
+.label_ongs{
+    font-weight: bold;
+    left:200px
+}
